@@ -49,16 +49,7 @@ module.exports = {
         siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
       }
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        postCssPlugins: [
-          require('tailwindcss'),
-          require('./tailwind.config.js') // Optional: Load custom Tailwind CSS configuration
-        ]
-      }
-    },
-    'gatsby-plugin-emotion',
+    'gatsby-plugin-antd',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
