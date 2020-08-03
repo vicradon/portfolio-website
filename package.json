@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "osinachi-portfolio",
+  "description": "Osinachi Chukwujama Portfolio Website",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Osinachi Chukwujama",
   "dependencies": {
     "gatsby": "^2.20.12",
     "gatsby-plugin-manifest": "^2.3.3",
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/vicradon/vicradon.github.io"
   }
 }
