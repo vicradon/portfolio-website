@@ -56,6 +56,7 @@ export default function Home() {
               href="https://studentambassadors.microsoft.com"
               display={"inline-block"}
               fontWeight={"bold"}
+              textDecoration={"underline"}
             >
               Microsoft Learn Student Ambassador
             </Link>
@@ -122,7 +123,7 @@ export default function Home() {
             </ListItem>
             <ListItem>
               <Heading size={"sm"}>
-                Esettlement Ltd - Software Engineer Intern{" "}
+                E-settlement Ltd - Software Engineer Intern{" "}
                 <em>(May 2020 - July 2020)</em>{" "}
               </Heading>
               <Text>
@@ -140,27 +141,33 @@ export default function Home() {
 
           <OrderedList>
             <ListItem>
-              <Link
-                href="https://swag-gp.netlify.app/
+              <Heading size={"sm"}>
+                <Link
+                  href="https://swag-gp.netlify.app/
 "
-              >
-                <Heading size={"sm"}>Swag GP</Heading>
-                <Text>
-                  Built a CGPA calculator for college students that features a
-                  grade change system and offline use.
-                </Text>
-              </Link>
+                  textDecoration={"underline"}
+                >
+                  Swag GP
+                </Link>
+              </Heading>
+              <Text>
+                Built a CGPA calculator for college students that features a
+                grade change system and offline use.
+              </Text>
             </ListItem>
             <ListItem>
-              <Link
-                href="https://promise-card.netlify.app/
+              <Heading size={"sm"}>
+                <Link
+                  href="https://promise-card.netlify.app/
 "
-              >
-                <Heading size={"sm"}>Promise Card</Heading>
-                <Text>
-                  Built a tool for creating wishlists and redeeming them.
-                </Text>
-              </Link>
+                  textDecoration={"underline"}
+                >
+                  Promise Card
+                </Link>
+              </Heading>
+              <Text>
+                Built a tool for creating wish lists and redeeming them.
+              </Text>
             </ListItem>
           </OrderedList>
         </Box>
