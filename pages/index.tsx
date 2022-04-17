@@ -1,73 +1,192 @@
-import HomeLayout from "../src/layout/HomeLayout";
 import {
   Box,
   Text,
-  Button,
   Heading,
-  Flex,
-  Image,
   Container,
-  Grid,
-  List,
   ListItem,
   OrderedList,
-  UnorderedList,
+  Link,
 } from "@chakra-ui/react";
-import TestimonialCard from "../src/components/Cards/TestimonialCard";
-import BlogPostCard from "../src/components/Cards/BlogPostCard";
-import StatsCard from "../src/components/Cards/StatsCard";
-import ProjectCard from "../src/components/Cards/ProjectCard";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <Box>
+    <Container mt={"2rem"} maxW={"container.lg"}>
+      <Head>
+        <title>Osinachi Chukwujama Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        <meta name="robots" content="follow, index" />
+        <meta
+          name="description"
+          content={
+            "Osinachi Chukwujama Portfolio showing his skills, achievements, and work experience."
+          }
+        />
+        <meta property="og:url" content={`https://osinachi.me`} />
+        <meta property="og:type" content={"website"} />
+        <meta
+          property="og:site_name"
+          content={"Osinachi Chukwujama Porfolio"}
+        />
+        <meta
+          property="og:description"
+          content={
+            "Osinachi Chukwujama Portfolio showing his skills, achievements, and work experience."
+          }
+        />
+        <meta property="og:title" content={"Osinachi Chukwujama Porfolio"} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content={"https://twitter.com/vicradon"} />
+        <meta name="twitter:title" content={"Osinachi Chukwujama Porfolio"} />
+        <meta
+          name="twitter:description"
+          content={
+            "Osinachi Chukwujama Portfolio showing his skills, achievements, and work experience."
+          }
+        />
+        <meta name="twitter:image" content={"twitter-card.png"} />
+      </Head>
       <Box>
-        <Text>Software Engineer and Technical Writer</Text>
-        <Text>Osinachi</Text>
+        <Box mb={"2rem"}>
+          <Heading mb={"1rem"} size={"lg"}>
+            Hi, I'm Osinachi
+          </Heading>
 
-        <Text>I'm a software engineer and technical writer.</Text>
-        <Text>
-          I love working on things related to WebAssembly, Data Engineering, and
-          distributed systems.
-        </Text>
-
-        <Box>
-          <Text>More about me</Text>
-          <Text>I love communities especially open source communities.</Text>
-          <Text>I am a Microsoft Learn Student Ambassador.</Text>
+          <Text mb={".5rem"}>
+            I'm a software engineer and technical writer.
+          </Text>
+          <Text mb={".5rem"}>
+            I love working on things related to Data Engineering and distributed
+            systems.
+          </Text>
         </Box>
 
-        <Box>
-          <Text>Core Skills</Text>
+        <Box mb={"2rem"}>
+          <Heading mb={"0.5rem"} size={"md"}>
+            More about me
+          </Heading>
 
-          <UnorderedList>
+          <Text>
+            I am a{" "}
+            <Link
+              href="https://studentambassadors.microsoft.com"
+              display={"inline-block"}
+              fontWeight={"bold"}
+            >
+              Microsoft Learn Student Ambassador
+            </Link>
+            . This means that I dedicate significant hours of my time helping
+            students learn Microsoft technologies.
+          </Text>
+        </Box>
+
+        <Box mb={"2rem"}>
+          <Heading mb={"0.5rem"} size={"md"}>
+            Core Skills
+          </Heading>
+
+          <OrderedList>
             <ListItem>
-              <Heading size={"md"}>Problem Solving</Heading>
+              <Heading size={"sm"}>Problem Solving</Heading>
               <Text>I love solving real-world problems with software. </Text>
             </ListItem>
             <ListItem>
-              <Heading size={"md"}>Technical Writing</Heading>
+              <Heading size={"sm"}>Technical Writing</Heading>
               <Text>
                 I write technical articles and tutorials for software companies.
               </Text>
             </ListItem>
             <ListItem>
-              <Heading size={"md"}>Community Building</Heading>
+              <Heading size={"sm"}>Community Building</Heading>
               <Text>I work with Student Leaders and </Text>
             </ListItem>
-          </UnorderedList>
+          </OrderedList>
         </Box>
 
-        <Box>
-          <Text>My Projects</Text>
-          <Text>
-            I've worked on many projects over the years. Here's a sneak peak at
-            some of them.
-          </Text>
+        <Box mb={"2rem"}>
+          <Heading mb={"0.5rem"} size={"md"}>
+            Work Experience
+          </Heading>
 
-          <ProjectCard />
+          <OrderedList>
+            <ListItem>
+              <Heading size={"sm"}>
+                Patricia Technologies - Frontend Software Engineer{" "}
+                <em>(July 2021 - Present)</em>
+              </Heading>
+              <Text>
+                Improved payment processing for the operations team by 100% by
+                working on payment management dashboards.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Heading size={"sm"}>
+                Draft.dev - Technical Writer <em>(May 2021 - Present)</em>{" "}
+              </Heading>
+              <Text>
+                Improved developer success by delivering concise technical
+                articles on software and data engineering topics.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Heading size={"sm"}>
+                Esettlement Ltd - Software Engineer Intern{" "}
+                <em>(May 2020 - July 2020)</em>{" "}
+              </Heading>
+              <Text>
+                Improved the overall user experience of the Paycenter admin app
+                by fixing bugs using chrome dev tools.
+              </Text>
+            </ListItem>
+          </OrderedList>
+        </Box>
+
+        <Box mb={"2rem"}>
+          <Heading mb={"0.5rem"} size={"md"}>
+            Projects
+          </Heading>
+
+          <OrderedList>
+            <ListItem>
+              <Link
+                href="https://swag-gp.netlify.app/
+"
+              >
+                <Heading size={"sm"}>Swag GP</Heading>
+                <Text>
+                  Built a CGPA calculator for college students that features a
+                  grade change system and offline use.
+                </Text>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://promise-card.netlify.app/
+"
+              >
+                <Heading size={"sm"}>Promise Card</Heading>
+                <Text>
+                  Built a tool for creating wishlists and redeeming them.
+                </Text>
+              </Link>
+            </ListItem>
+          </OrderedList>
+        </Box>
+
+        <Box mb={"2rem"}>
+          <Link
+            href="/Osinachi_Chukwujama_Resume.pdf"
+            display={"inline-block"}
+            fontWeight={"bold"}
+            rel={"norefer"}
+            target={"_blank"}
+          >
+            Get my resume here
+          </Link>
         </Box>
       </Box>
-    </Box>
+    </Container>
   );
 }
