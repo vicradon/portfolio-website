@@ -72,17 +72,25 @@ export default function Home() {
           <OrderedList>
             <ListItem>
               <Heading size={"sm"}>Problem Solving</Heading>
-              <Text>I love solving real-world problems with software. </Text>
+              <Text>
+                I apply the principles of iteration to solve problems with
+                software technologies.
+              </Text>
             </ListItem>
             <ListItem>
               <Heading size={"sm"}>Technical Writing</Heading>
               <Text>
-                I write technical articles and tutorials for software companies.
+                I improve developer success by writing concise technical content
+                on software and data engineering topics.
               </Text>
             </ListItem>
             <ListItem>
               <Heading size={"sm"}>Community Building</Heading>
-              <Text>I work with Student Leaders and </Text>
+              <Text>
+                I work with student leaders, Cloud Advocates, and Microsoft Most
+                Valued Professionals (MVPs) to share the gospel of technology to
+                all software professionals.
+              </Text>
             </ListItem>
           </OrderedList>
         </Box>
