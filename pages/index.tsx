@@ -9,44 +9,26 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 
+import siteMetadata from "../data/siteMetadata";
+
 export default function Home() {
   return (
     <Container mt={"2rem"} maxW={"container.lg"}>
       <Head>
-        <title>Osinachi Chukwujama Portfolio</title>
+        <title>{siteMetadata.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
         <meta name="robots" content="follow, index" />
-        <meta
-          name="description"
-          content={
-            "Osinachi Chukwujama Portfolio showing his skills, achievements, and work experience."
-          }
-        />
-        <meta property="og:url" content={`https://osinachi.me`} />
+        <meta name="description" content={siteMetadata.description} />
+        <meta property="og:url" content={siteMetadata.siteUrl} />
         <meta property="og:type" content={"website"} />
-        <meta
-          property="og:site_name"
-          content={"Osinachi Chukwujama Porfolio"}
-        />
-        <meta
-          property="og:description"
-          content={
-            "Osinachi Chukwujama Portfolio showing his skills, achievements, and work experience."
-          }
-        />
-        <meta property="og:title" content={"Osinachi Chukwujama Porfolio"} />
-
+        <meta property="og:site_name" content={siteMetadata.title} />
+        <meta property="og:description" content={siteMetadata.description} />
+        <meta property="og:title" content={siteMetadata.title} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content={"https://twitter.com/vicradon"} />
-        <meta name="twitter:title" content={"Osinachi Chukwujama Porfolio"} />
-        <meta
-          name="twitter:description"
-          content={
-            "Osinachi Chukwujama Portfolio showing his skills, achievements, and work experience."
-          }
-        />
-        <meta name="twitter:image" content={"twitter-card.png"} />
+        <meta name="twitter:site" content={siteMetadata.twitter} />
+        <meta name="twitter:title" content={siteMetadata.title} />
+        <meta name="twitter:description" content={siteMetadata.description} />
+        <meta name="twitter:image" content={siteMetadata.socialBanner} />
       </Head>
       <Box>
         <Box mb={"2rem"}>
