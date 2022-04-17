@@ -179,8 +179,9 @@ export default function Home() {
             fontWeight={"bold"}
             rel={"norefer"}
             target={"_blank"}
+            textDecoration={"underline"}
           >
-            Get my resume here
+            View my resume
           </Link>
         </Box>
       </Box>
