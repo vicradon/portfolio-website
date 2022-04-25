@@ -1,23 +1,65 @@
-import React from "react";
+import {
+  Box,
+  Text,
+  Heading,
+  Container,
+  ListItem,
+  OrderedList,
+  Link,
+  Flex,
+} from "@chakra-ui/react";
+import Head from "next/head";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
+import { ReactNode } from "react";
 
-import { Box } from "@chakra-ui/react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import siteMetadata from "../../../data/siteMetadata";
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-function HomeLayout(props: Props) {
+export default function HomeLayout(props: Props) {
+  const { pathname } = useRouter();
+
   const { children } = props;
 
   return (
-    <Box>
-      <Navbar />
+    <Container mt={"2rem"} maxW={"container.lg"}>
+      <Head>
+        <title>{siteMetadata.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="robots" content="follow, index" />
+        <meta name="description" content={siteMetadata.description} />
+        <meta property="og:url" content={siteMetadata.siteUrl} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:site_name" content={siteMetadata.title} />
+        <meta property="og:description" content={siteMetadata.description} />
+        <meta property="og:title" content={siteMetadata.title} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content={siteMetadata.twitter} />
+        <meta name="twitter:title" content={siteMetadata.title} />
+        <meta name="twitter:description" content={siteMetadata.description} />
+        <meta name="twitter:image" content={siteMetadata.socialBanner} />
+      </Head>
+
+      <Flex mb={"2rem"} justifyContent={"space-between"} as={"nav"}>
+        <NextLink href={"/"} passHref>
+          <Link textDecor={pathname === "/" ? "underline" : ""}>Home</Link>
+        </NextLink>
+
+        <NextLink href={"/technical-writing-portfolio"} passHref>
+          <Link
+            textDecor={
+              pathname === "/technical-writing-portfolio" ? "underline" : ""
+            }
+          >
+            Technical Writing Portfolio
+          </Link>
+        </NextLink>
+      </Flex>
+
       {children}
-      <Footer />
-    </Box>
+    </Container>
   );
 }
-
-export default HomeLayout;
