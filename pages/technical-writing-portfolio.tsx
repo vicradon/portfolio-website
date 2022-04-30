@@ -1,34 +1,21 @@
-import React, { useState, useEffect } from "react";
 import HomeLayout from "../src/layout/HomeLayout";
-import axios from "axios";
+const { Client } = require("@notionhq/client");
+
 import {
   Box,
   Heading,
   Link,
-  List,
   ListItem,
   OrderedList,
   Text,
 } from "@chakra-ui/react";
 
-interface Props {}
+interface Props {
+  pageContent: any[];
+}
 
 function TechnicalWritingPortfolio(props: Props) {
-  const {} = props;
-
-  const [pageContent, setPageContent] = useState([]);
-  const [error, setError] = useState("Loading...");
-
-  useEffect(() => {
-    axios
-      .get("/api/get-page-content")
-      .then(({ data }) => {
-        setPageContent(data.response.results);
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
-  }, []);
+  const { pageContent } = props;
 
   const grouper = (content: any) => {
     const groups: {
@@ -94,10 +81,25 @@ function TechnicalWritingPortfolio(props: Props) {
           </Box>
         );
       })}
-
-      {!pageContent.length && <Text>{error}</Text>}
+      {!pageContent.length && <Text>Failed to fetch</Text>}
     </HomeLayout>
   );
+}
+
+export async function getStaticProps() {
+  const notion = new Client({ auth: process.env.NEXT_PUBLIC_NOTION_KEY });
+  const blockId = process.env.NEXT_PUBLIC_NOTION_DATABASE_ID;
+
+  const { results } = await notion.blocks.children.list({
+    block_id: blockId,
+    page_size: 100,
+  });
+
+  return {
+    props: {
+      pageContent: results || [],
+    },
+  };
 }
 
 export default TechnicalWritingPortfolio;
