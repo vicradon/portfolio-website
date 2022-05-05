@@ -16,10 +16,13 @@ export default function Home() {
           Hi, I'm Osinachi
         </Heading>
 
-        <Text mb={".5rem"}>I'm a software engineer and technical writer.</Text>
         <Text mb={".5rem"}>
-          I love working on things related to Data Engineering and distributed
-          systems.
+          I'm a software engineer, technical writer, and aspiring developer
+          advocate 🥑.
+        </Text>
+        <Text mb={".5rem"}>
+          I love working with technologies in the data engineering and
+          cloud-native ecosystem.
         </Text>
       </Box>
       <Box mb={"2rem"}>
@@ -37,8 +40,8 @@ export default function Home() {
           >
             Microsoft Learn Student Ambassador
           </Link>
-          . This means that I dedicate significant hours of my time helping
-          students learn Microsoft technologies.
+          . I have several years of experience empowering students to learn new
+          technologies and grow as techies.
         </Text>
       </Box>
       <Box mb={"2rem"}>
@@ -104,12 +107,19 @@ export default function Home() {
           </ListItem>
           <ListItem>
             <Heading as={"h3"} size={"sm"}>
-              E-settlement Ltd - Software Engineer Intern{" "}
-              <em>(May 2020 - July 2020)</em>{" "}
+              Learn Student Ambassador <em>(January 2020 - Present)</em>{" "}
             </Heading>
             <Text>
-              Improved the overall user experience of the Paycenter admin app by
-              fixing bugs using chrome dev tools.
+              • Organized meetups and workshops on Azure functions, Azure
+              Applied AI services, and Azure App Services.
+            </Text>
+            <Text>
+              • Impacted over 2000 students by co-organized Microsoft Student
+              Summit Africa 2020.
+            </Text>
+            <Text>
+              • Mentored other student ambassadors to help them reach new
+              milestones and learn new technologies.
             </Text>
           </ListItem>
         </OrderedList>
