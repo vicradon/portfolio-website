@@ -2,11 +2,15 @@ import "../styles/globals.css";
 
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-const colors = {
-  brand: "#1a365d",
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: false,
+  colors: {
+    brand: "#1a365d",
+  },
 };
 
-const theme = extendTheme({ colors });
+export const theme = extendTheme({ config });
 
 function MyApp({ Component, pageProps }) {
   return (

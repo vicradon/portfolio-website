@@ -13,7 +13,7 @@ export default function Home() {
     <HomeLayout>
       <Box mb={"2rem"}>
         <Heading as={"h1"} mb={"1rem"} size={"lg"}>
-          Hi, I'm Osinachi
+          Hi, I'm Osinachi 👋🏾
         </Heading>
 
         <Text mb={".5rem"}>

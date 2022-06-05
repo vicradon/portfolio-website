@@ -7,11 +7,14 @@ import {
   OrderedList,
   Link,
   Flex,
+  useColorMode,
+  IconButton,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 import siteMetadata from "../../../data/siteMetadata";
 
@@ -21,6 +24,7 @@ interface Props {
 
 export default function HomeLayout(props: Props) {
   const { pathname } = useRouter();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   const { children } = props;
 
@@ -48,15 +52,25 @@ export default function HomeLayout(props: Props) {
           <Link textDecor={pathname === "/" ? "underline" : ""}>Home</Link>
         </NextLink>
 
-        <NextLink href={"/technical-writing-portfolio"} passHref>
-          <Link
-            textDecor={
-              pathname === "/technical-writing-portfolio" ? "underline" : ""
-            }
+        <Flex alignItems={"center"} mb={"2rem"} columnGap={"1rem"}>
+          <NextLink href={"/technical-writing-portfolio"} passHref>
+            <Link
+              textDecor={
+                pathname === "/technical-writing-portfolio" ? "underline" : ""
+              }
+            >
+              Technical Writing Portfolio
+            </Link>
+          </NextLink>
+
+          <IconButton
+            icon={colorMode === "light" ? <BsMoon /> : <BsSun />}
+            aria-label="night mode switch"
+            onClick={toggleColorMode}
           >
-            Technical Writing Portfolio
-          </Link>
-        </NextLink>
+            Toggle {colorMode === "light" ? "Dark" : "Light"}
+          </IconButton>
+        </Flex>
       </Flex>
 
       {children}
