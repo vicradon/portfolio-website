@@ -163,7 +163,7 @@ export default function Home() {
       </Box>
       <Box mb={"2rem"}>
         <Link
-          href="/Osinachi_Chukwujama_Resume.pdf"
+          href="/Osinachi-Chukwujama-Resume.pdf"
           display={"inline-block"}
           fontWeight={"bold"}
           rel={"norefer"}
