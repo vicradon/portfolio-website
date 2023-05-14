@@ -17,10 +17,10 @@ export default function Home() {
         </Heading>
 
         <Text mb={".5rem"}>
-          I'm a software engineer, technical writer, and aspiring developer
-          advocate 🥑.
+          I'm a software engineer and technical writer. I am open to new grad opportunities.
         </Text>
         <Text mb={".5rem"}>
+          I am skilled in selecting the right data structures for technical problems and choosing the right algorithms. I also have experience in system and object-oriented deisgn.
           I love working with technologies in the data engineering and
           cloud-native ecosystem.
         </Text>
@@ -163,7 +163,7 @@ export default function Home() {
       </Box>
       <Box mb={"2rem"}>
         <Link
-          href="/Osinachi_Chukwujama_Resume.pdf"
+          href="/Osinachi-Chukwujama-Resume.pdf"
           display={"inline-block"}
           fontWeight={"bold"}
           rel={"norefer"}
