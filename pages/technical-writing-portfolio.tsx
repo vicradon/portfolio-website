@@ -87,8 +87,8 @@ function TechnicalWritingPortfolio(props: Props) {
 }
 
 export async function getStaticProps() {
-  const notion = new Client({ auth: process.env.NEXT_PUBLIC_NOTION_KEY });
-  const blockId = process.env.NEXT_PUBLIC_NOTION_DATABASE_ID;
+  const notion = new Client({ auth: process.env.NOTION_KEY });
+  const blockId = process.env.NOTION_DATABASE_ID;
 
   const { results } = await notion.blocks.children.list({
     block_id: blockId,
