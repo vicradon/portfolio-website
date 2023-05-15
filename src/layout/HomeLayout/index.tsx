@@ -48,20 +48,25 @@ export default function HomeLayout(props: Props) {
       </Head>
 
       <Flex mb={"2rem"} justifyContent={"space-between"} as={"nav"}>
-        <NextLink href={"/"} passHref>
-          <Link textDecor={pathname === "/" ? "underline" : ""}>Home</Link>
-        </NextLink>
+        <Link
+          href={"/"}
+          as={NextLink}
+          textDecor={pathname === "/" ? "underline" : ""}
+        >
+          Home
+        </Link>
 
         <Flex alignItems={"center"} mb={"2rem"} columnGap={"1rem"}>
-          <NextLink href={"/technical-writing-portfolio"} passHref>
-            <Link
-              textDecor={
-                pathname === "/technical-writing-portfolio" ? "underline" : ""
-              }
-            >
-              Technical Writing Portfolio
-            </Link>
-          </NextLink>
+          <Link
+            href={"/"}
+            as={NextLink}
+            textDecor={
+              pathname === "/technical-writing-portfolio" ? "underline" : ""
+            }
+          >
+            {" "}
+            Technical Writing Portfolio
+          </Link>
 
           <IconButton
             icon={
