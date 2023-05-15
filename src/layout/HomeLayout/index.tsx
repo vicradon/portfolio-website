@@ -14,9 +14,9 @@ import Head from "next/head";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
-import { BsMoon, BsSun } from "react-icons/bs";
 
 import siteMetadata from "../../../data/siteMetadata";
+import Image from "next/image";
 
 interface Props {
   children: ReactNode;
@@ -64,7 +64,23 @@ export default function HomeLayout(props: Props) {
           </NextLink>
 
           <IconButton
-            icon={colorMode === "light" ? <BsMoon /> : <BsSun />}
+            icon={
+              colorMode === "light" ? (
+                <Image
+                  src="/icons/bs-moon.svg"
+                  alt="moon"
+                  width={16}
+                  height={16}
+                />
+              ) : (
+                <Image
+                  src="/icons/bs-sun.svg"
+                  alt="sun"
+                  width={16}
+                  height={16}
+                />
+              )
+            }
             aria-label="night mode switch"
             onClick={toggleColorMode}
           >

@@ -9,7 +9,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import { BsCheck } from "react-icons/bs";
 
 interface Props {
   title: string;
@@ -36,7 +35,12 @@ function ServiceOfferingList(props: Props) {
         <List spacing={3}>
           {listItems.map((name) => (
             <ListItem key={name}>
-              <ListIcon as={BsCheck} color="green.500" />
+              <Image
+                src="/icons/bs-check.svg"
+                alt="check"
+                width={16}
+                height={16}
+              />
               {name}
             </ListItem>
           ))}
