@@ -65,7 +65,7 @@ function TechnicalWritingPortfolio(props: Props) {
               {group.heading}
             </Heading>
 
-            <OrderedList>
+            <OrderedList marginLeft={"2rem"}>
               {group.listItems.map((item) => (
                 <ListItem key={item.id}>
                   <Link

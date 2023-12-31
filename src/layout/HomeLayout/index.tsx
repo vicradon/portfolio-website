@@ -1,10 +1,5 @@
 import {
-  Box,
-  Text,
-  Heading,
   Container,
-  ListItem,
-  OrderedList,
   Link,
   Flex,
   useColorMode,
@@ -58,7 +53,7 @@ export default function HomeLayout(props: Props) {
 
         <Flex alignItems={"center"} mb={"2rem"} columnGap={"1rem"}>
           <Link
-            href={"/"}
+            href={"/technical-writing-portfolio"}
             as={NextLink}
             textDecor={
               pathname === "/technical-writing-portfolio" ? "underline" : ""

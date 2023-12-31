@@ -5,51 +5,122 @@ import {
   ListItem,
   OrderedList,
   Link,
+  useColorMode,
+  Flex,
 } from "@chakra-ui/react";
 import HomeLayout from "../src/layout/HomeLayout";
+import UnixSVG from "@/components/UnixSVG";
 
 export default function Home() {
+  const { colorMode } = useColorMode();
+  console.log(colorMode);
   return (
     <HomeLayout>
       <Box mb={"2rem"}>
+        <Text>Hello internet user,</Text>
         <Heading as={"h1"} mb={"1rem"} size={"lg"}>
-          Hi, I'm Osinachi 👋🏾
+          My name is Osinachi 👋🏾
         </Heading>
 
         <Text mb={".5rem"}>
-          I'm a software engineer and technical writer. I am open to new grad opportunities.
+          I'm a software engineer with 2+ years of experience in building
+          software systems, particularly in the Fintech space. I also write
+          technical content in as a side gig. I particularly enjoy writing
+          tutorials that pertain to
         </Text>
-        <Text mb={".5rem"}>
-          I am skilled in selecting the right data structures for technical problems and choosing the right algorithms. I also have experience in system and object-oriented deisgn.
-          I love working with technologies in the data engineering and
-          cloud-native ecosystem.
-        </Text>
-      </Box>
-      <Box mb={"2rem"}>
-        <Heading as={"h2"} mb={"0.5rem"} size={"md"}>
-          More about me
+
+        <OrderedList mb={4} marginLeft={"2rem"}>
+          <ListItem>CLI tools 🛠️ </ListItem>
+          <ListItem>
+            <Flex alignItems={"center"} columnGap={"5px"}>
+              <Text>Linux</Text>
+              <UnixSVG />
+            </Flex>
+          </ListItem>
+          <ListItem>
+            <Flex alignItems={"center"} columnGap={"5px"}>
+              <Text>Databases (PostgreSQL, MySQL, SQLite, etc)</Text>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20 18C20 20.2091 16.4183 22 12 22C7.58172 22 4 20.2091 4 18V13.974C4.50221 14.5906 5.21495 15.1029 6.00774 15.4992C7.58004 16.2854 9.69967 16.75 12 16.75C14.3003 16.75 16.42 16.2854 17.9923 15.4992C18.7851 15.1029 19.4978 14.5906 20 13.974V18Z"
+                  fill={colorMode === "dark" ? "#fff" : "#1C274C"}
+                />
+                <path
+                  d="M12 10.75C14.3003 10.75 16.42 10.2854 17.9923 9.49925C18.7851 9.10285 19.4978 8.59059 20 7.97397V12C20 12.5 18.2143 13.5911 17.3214 14.1576C15.9983 14.8192 14.118 15.25 12 15.25C9.88205 15.25 8.00168 14.8192 6.67856 14.1576C5.5 13.5683 4 12.5 4 12V7.97397C4.50221 8.59059 5.21495 9.10285 6.00774 9.49925C7.58004 10.2854 9.69967 10.75 12 10.75Z"
+                  fill={colorMode === "dark" ? "#fff" : "#1C274C"}
+                />
+                <path
+                  d="M17.3214 8.15761C15.9983 8.81917 14.118 9.25 12 9.25C9.88205 9.25 8.00168 8.81917 6.67856 8.15761C6.16384 7.95596 5.00637 7.31492 4.2015 6.27935C4.06454 6.10313 4.00576 5.87853 4.03988 5.65798C4.06283 5.50969 4.0948 5.35695 4.13578 5.26226C4.82815 3.40554 8.0858 2 12 2C15.9142 2 19.1718 3.40554 19.8642 5.26226C19.9052 5.35695 19.9372 5.50969 19.9601 5.65798C19.9942 5.87853 19.9355 6.10313 19.7985 6.27935C18.9936 7.31492 17.8362 7.95596 17.3214 8.15761Z"
+                  fill={colorMode === "dark" ? "#fff" : "#1C274C"}
+                />
+              </svg>{" "}
+            </Flex>
+          </ListItem>
+        </OrderedList>
+        <Box mb={8}>
+          <Text mb={".5rem"}>
+            So here's the thing, I love tech. I love building stuff. I love
+            conguring systems, networks, applications and stuff. But I'll be
+            damned if I did all these without developing an expertise to be
+            hirable.
+          </Text>
+          <Text mb={".5rem"}>
+            So my expertise currently lies in web development, particularly
+            frontend web development as I have over 2 years of experience in
+            this area.
+          </Text>
+          <Text mb={".5rem"}>
+            Aside my frontend software engineering experience, I have experience
+            building backend systems with FastAPI, AdonisJS, and Laravel.
+          </Text>
+        </Box>
+
+        <Heading as="h2" size={"lg"}>
+          Certifications and Stuff
         </Heading>
 
-        <Text>
-          I am a{" "}
-          <Link
-            href="https://studentambassadors.microsoft.com"
-            display={"inline-block"}
-            fontWeight={"bold"}
-            textDecoration={"underline"}
-          >
-            Microsoft Learn Student Ambassador
-          </Link>
-          . I have several years of experience empowering students to learn new
-          technologies and grow as techies.
+        <Text mb={4}>
+          I also have experience in administering cloud systems and networks. I
+          currently have four Azure certifications and one associate
+          certification in AI. Oh, you want to see the list? No worries:
         </Text>
+
+        <Box mb={4}>
+          <Heading as="h3" size="md">
+            Fundamentals Certifications
+          </Heading>
+
+          <OrderedList mb={4} marginLeft={"2rem"}>
+            <ListItem>Azure Fundamentals (AZ-900)</ListItem>
+            <ListItem>Azure AI Fundamentals (AI-900)</ListItem>
+            <ListItem>Azure Data Fundamentals (DP-900)</ListItem>
+            <ListItem>Azure Security Fundamentals (SC-900)</ListItem>
+          </OrderedList>
+        </Box>
+
+        <Box mb={4}>
+          <Heading as="h3" size="md">
+            Associate Certifications
+          </Heading>
+
+          <OrderedList mb={4} marginLeft={"2rem"}>
+            <ListItem>Azure AI Associate (AI-200)</ListItem>
+          </OrderedList>
+        </Box>
       </Box>
+
       <Box mb={"2rem"}>
         <Heading as={"h2"} mb={"0.5rem"} size={"md"}>
           Core Skills
         </Heading>
 
-        <OrderedList>
+        <OrderedList mb={4} marginLeft={"2rem"}>
           <ListItem>
             <Heading as={"h3"} size={"sm"}>
               Problem Solving
@@ -81,55 +152,99 @@ export default function Home() {
         </OrderedList>
       </Box>
       <Box mb={"2rem"}>
-        <Heading as={"h2"} mb={"0.5rem"} size={"md"}>
-          Work Experience
-        </Heading>
+        <Box mb={4}>
+          <Heading as={"h2"} mb={"0.5rem"} size={"md"}>
+            Work Experience
+          </Heading>
 
-        <OrderedList>
-          <ListItem>
-            <Heading as={"h3"} size={"sm"}>
-              Patricia Technologies - Frontend Software Engineer{" "}
-              <em>(July 2021 - Present)</em>
-            </Heading>
-            <Text>
-              Improved payment processing for the operations team by 100% by
-              working on payment management dashboards.
-            </Text>
-          </ListItem>
-          <ListItem>
-            <Heading as={"h3"} size={"sm"}>
-              Draft.dev - Technical Writer <em>(May 2021 - Present)</em>{" "}
-            </Heading>
-            <Text>
-              Improved developer success by delivering concise technical
-              articles on software and data engineering topics.
-            </Text>
-          </ListItem>
-          <ListItem>
-            <Heading as={"h3"} size={"sm"}>
-              Learn Student Ambassador <em>(January 2020 - Present)</em>{" "}
-            </Heading>
-            <Text>
-              • Organized meetups and workshops on Azure functions, Azure
-              Applied AI services, and Azure App Services.
-            </Text>
-            <Text>
-              • Impacted over 2000 students by co-organized Microsoft Student
-              Summit Africa 2020.
-            </Text>
-            <Text>
-              • Mentored other student ambassadors to help them reach new
-              milestones and learn new technologies.
-            </Text>
-          </ListItem>
-        </OrderedList>
+          <OrderedList mb={4} marginLeft={"2rem"}>
+            <ListItem>
+              <Heading as={"h3"} size={"sm"}>
+                Patricia Technologies - Frontend Software Engineer{" "}
+                <em>(July 2021 - May 2023 [2 years])</em>
+              </Heading>
+              <Text>
+                Improved payment processing for the operations team by 100% by
+                working on payment management dashboards.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Heading as={"h3"} size={"sm"}>
+                Draft.dev - Technical Writer <em>(May 2021 - Present)</em>{" "}
+              </Heading>
+              <Text>
+                Improved developer success by delivering concise technical
+                articles on software and data engineering topics.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Heading as={"h3"} size={"sm"}>
+                Microsoft Learn Student Ambassador{" "}
+                <em>(January 2020 - August 2023)</em>{" "}
+              </Heading>
+              <Text>
+                • Organized meetups and workshops on Azure functions, Azure
+                Applied AI services, and Azure App Services.
+              </Text>
+              <Text>
+                • Impacted over 2000 students by co-organized Microsoft Student
+                Summit Africa 2020.
+              </Text>
+              <Text>
+                • Mentored other student ambassadors to help them reach new
+                milestones and learn new technologies.
+              </Text>
+            </ListItem>
+          </OrderedList>
+        </Box>
+
+        <Box mb={4}>
+          <Heading as={"h2"} mb={"0.5rem"} size={"md"}>
+            Volunteering Experience
+          </Heading>
+          <OrderedList mb={4} marginLeft={"2rem"}>
+            <ListItem>
+              <Heading as={"h3"} size={"sm"}>
+                Learn Student Ambassador <em>(January 2020 - Present)</em>{" "}
+              </Heading>
+              <Text>
+                • Organized meetups and workshops on Azure functions, Azure
+                Applied AI services, and Azure App Services.
+              </Text>
+              <Text>
+                • Impacted over 2000 students by co-organized Microsoft Student
+                Summit Africa 2020.
+              </Text>
+              <Text>
+                • Mentored other student ambassadors to help them reach new
+                milestones and learn new technologies.
+              </Text>
+            </ListItem>
+          </OrderedList>
+        </Box>
       </Box>
       <Box mb={"2rem"}>
         <Heading as={"h2"} mb={"0.5rem"} size={"md"}>
           Projects
         </Heading>
 
-        <OrderedList>
+        <OrderedList mb={4} marginLeft={"2rem"}>
+          <ListItem>
+            <Heading as={"h3"} size={"sm"}>
+              <Link
+                href="https://tbh.ink
+"
+                textDecoration={"underline"}
+              >
+                AnonMsg App
+              </Link>
+            </Heading>
+            <Text>
+              I built an anonymous messaging application that users can use to
+              receive and share anonymous messages from friends and enemies
+              alike.
+            </Text>
+          </ListItem>
           <ListItem>
             <Heading as={"h3"} size={"sm"}>
               <Link
