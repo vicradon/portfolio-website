@@ -1,0 +1,197 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "work": "Work Experience",
+    "education": "Education",
+    "projects": "Open Source Projects",
+    "awards": "Certifications",
+    "skills": "Skills"
+  },
+  "basics": {
+    "name": "Osinachi Chukwujama",
+    "email": "osinachi.chukwujama@gmail.com",
+    "phone": "+2348105487627",
+    "location": {
+      "address": "Lagos, Nigeria"
+    },
+    "website": "https://www.osinachi.me/"
+  },
+  "education": [
+    {
+      "area": "Industrial and Production Engineering",
+      "studyType": "Mechanical Engineering",
+      "endDate": "August 2023",
+      "gpa": "4.56/5.0 (First Class)",
+      "institution": "Federal University of Technology, Owerri",
+      "location": "Owerri",
+      "startDate": "Nov 2017"
+    }
+  ],
+  "work": [
+    {
+      "location": "Lagos, Nigeria",
+      "position": "FULL-STACK SOFTWARE ENGINEER",
+      "website": "",
+      "startDate": "July 2021",
+      "highlights": [
+        "Implemented and optimized the admin dashboard of the crypto payment management system for the Patricia applications using React.js, Next.js, and TailwindCSS, resulting in an 80% improvement in payment management.",
+        "Wrote and documented CRUD APIs related to customer payments on the Vaunt Laravel application ",
+        "Implemented logging and monitoring using Sentry which helped identified bugs in the application, improving uptime by over 25%.",
+        "Increased the security of the payment admin dashboard by 70% by implementing token-based Two-Factor Authentication, ensuring secure access to the payment system.",
+        "Refactored the data fetching layer of the application to use React Query, resulting in a reduction of duplicated code and improved performance.",
+        "Successfully enhanced the frontend resilience of the crypto payment management system by writing component and integration tests using Jest and Playwright, reducing app crashes in production by 90%.",
+        "Reduced runtime bugs in the production environment of the payment management system by porting the JavaScript-based React application to TypeScript, ensuring smoother performance, type-safety and efficient debugging."
+      ],
+      "company": "Patricia Technologies",
+      "endDate": "June 2023"
+    },
+    {
+      "highlights": [
+        "Developed the landing page, about page, and contact page of the company's website which improved online presence by 80%.",
+        "Authored a learning platform for the company which improved knowledge sharing by 100% using Next.js, Postgresql, Laravel, Redis, and Typescript.",
+        "Built software plugins using WebAssembly that allows viewing of 3D models on the main website frontend which improved user engagement by 60%.",
+        "Worked on the SEO of the main website to increase organic visits by 100% using SEO tools and meta tags."
+      ],
+      "company": "Generative CAD Services",
+      "position": "Software Engineer",
+      "location": "Lagos, Nigeria",
+      "startDate": "December 2021",
+      "endDate": "June 2022"
+    },
+    {
+      "highlights": [
+        "Enhanced the performance of the Paycenter admin application by 67% by fixing memory leaks from state transition between pages.",
+        "Add new components such as modals and PDF export to the Paycenter admin app that allowed for easier customer POS application review.",
+        "Revamped the ease of data access for agents of the Paycenter admin app through a backend Microservice built using Nest.js and TypeScript, thereby improving the ease of using the application by 75%.",
+        "Improved the onboarding experience for new developers of the Paycenter admin app by documenting features in the Confluent wiki tool thereby reducing onboarding time by 80%."
+      ],
+      "company": "Esettlement Ltd",
+      "position": "Software Engineer Intern",
+      "location": "Lagos, Nigeria",
+      "startDate": "May 2020",
+      "endDate": "July 2020"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "PHP",
+        "SQL",
+        "Python",
+        "SQL",
+        "Javascript",
+        "Typescript",
+        "Go"
+      ],
+      "name": "Programming Languages"
+    },
+    {
+      "keywords": [
+        "Git",
+        "AWS",
+        "Google Cloud Platform",
+        "Azure",
+        "Docker",
+        "Figma",
+        "Cypress",
+        "Playwright",
+        "Postgresql"
+      ],
+      "name": "Technologies and Tools"
+    },
+    {
+      "keywords": [
+        "Laravel",
+        "Lumen",
+        "Symphony",
+        "Express.js",
+        "Nest.js",
+        "React.js"
+      ],
+      "name": "Frameworks"
+    },
+    {
+      "keywords": [
+        "Communication",
+        "Presentation",
+        "Critical Analysis",
+        "Technical Writing",
+        "Attention to detail"
+      ],
+      "name": "Soft Skills"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Eloquent ORM"
+      ],
+      "name": "Polls-API",
+      "description": "An API for creating and managing polls ",
+      "url": "https://github.com/vicradon/polls-api"
+    },
+    {
+      "keywords": [
+        "YoloV5",
+        "Typescript",
+        "JavaScript",
+        "React.js"
+      ],
+      "name": "Proctify",
+      "description": "AN AI REMOTE PROCTORING TOOL THAT USED FOR PROCTORING REMOTE ONLINE EXAMS. ",
+      "url": "http://proctify-frontend.vercel.app/"
+    },
+    {
+      "keywords": [
+        "JavaScript",
+        "Python",
+        "Rust"
+      ],
+      "url": "https://github.com/vicradon/network-tools",
+      "description": "A collection of tools written in Python, JavaScript, and Rust for doing networking-related computation. ",
+      "name": "Network Tools"
+    },
+    {
+      "name": "AnonMsg",
+      "description": "AN ANONYMOUS MESSAGING APPLICATION THAT PEOPLE CAN USE TO RECEIVE MESSAGES FROM FRIENDS",
+      "url": "https://tbh.ink",
+      "keywords": [
+        "Next.js",
+        "Firebase"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "date": "Sept 2020",
+      "awarder": "Microsoft",
+      "summary": "Demonstrated proficiency in cloud computing on Azure and solutions built on the cloud, resulting in achieving the Microsoft AZ-900 certification. ",
+      "title": "Azure Fundamentals (AZ-900)"
+    },
+    {
+      "title": "Azure Data Fundamentals (DP-900)",
+      "date": "March 2022",
+      "awarder": "Microsoft",
+      "summary": "Awarded the Microsoft DP-900 certification for demonstrating proficiency in data technologies and tools on Azure."
+    },
+    {
+      "title": "Azure AI Fundamentals (AI-900)",
+      "date": "March 2022",
+      "awarder": "Microsoft",
+      "summary": "Awarded the Microsoft Azure AI-900 certification for demonstrating proficiency in the use of AI services on Azure."
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "skills",
+    "work",
+    "projects",
+    "awards"
+  ]
+}
