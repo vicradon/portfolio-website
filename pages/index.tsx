@@ -13,7 +13,7 @@ import UnixSVG from "@/components/UnixSVG";
 
 export default function Home() {
   const { colorMode } = useColorMode();
-  console.log(colorMode);
+  
   return (
     <HomeLayout>
       <Box mb={"2rem"}>
@@ -23,10 +23,7 @@ export default function Home() {
         </Heading>
 
         <Text mb={".5rem"}>
-          I'm a software engineer with 2+ years of experience in building
-          software systems, particularly in the Fintech space. I also write
-          technical content in as a side gig. I particularly enjoy writing
-          tutorials that pertain to
+          I'm a software engineer with 2+ years of experience in building software systems, particularly in the Fintech space. I also write technical content as a side gig. I particularly enjoy creating tutorials that pertain to:
         </Text>
 
         <OrderedList mb={4} marginLeft={"2rem"}>
@@ -65,19 +62,13 @@ export default function Home() {
         </OrderedList>
         <Box mb={8}>
           <Text mb={".5rem"}>
-            So here's the thing, I love tech. I love building stuff. I love
-            conguring systems, networks, applications and stuff. But I'll be
-            damned if I did all these without developing an expertise to be
-            hirable.
+            Now, here's the deal: I love tech. I love building stuff, configuring systems, networks, applications, and more. However, I wouldn't have gone through all this without developing expertise to make myself employable.
           </Text>
           <Text mb={".5rem"}>
-            So my expertise currently lies in web development, particularly
-            frontend web development as I have over 2 years of experience in
-            this area.
+            Currently, my expertise lies in web development, specifically frontend web development, with over 2 years of experience in this field.
           </Text>
           <Text mb={".5rem"}>
-            Aside my frontend software engineering experience, I have experience
-            building backend systems with FastAPI, AdonisJS, and Laravel.
+            In addition to my frontend software engineering experience, I've worked on building backend systems with FastAPI, AdonisJS, and Laravel.
           </Text>
         </Box>
 
