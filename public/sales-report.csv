@@ -1,0 +1,42 @@
+Order ID,Order Date,Customer Name,Product Name,Quantity Ordered,Order Total (USD),Payment Method
+10001,2024-06-02,John Doe,Widget X10,2,52.46,Credit Card
+10002,2024-06-02,Jane Smith,Megawidget M1000,1,499.99,Debit Card
+10003,2024-06-02,Brandon Lee,T-Shirt (Blue, L),3,33.94,Cash on Delivery
+10004,2024-06-02,Alice Johnson,Box of Pens (12 ct),2,11.97,Gift Card
+10005,2024-06-02,Olivia Jones,Laptop Case,1,39.99,Credit Card
+10006,2024-06-02,Noah Miller,Power Bank,2,24.99,Cash on Delivery
+10007,2024-06-02,Mia Garcia,Wireless Keyboard,1,49.95,Gift Card
+10008,2024-06-02,Charles Brown,Mouse (Wireless),1,29.99,Credit Card
+10009,2024-06-02,Emily Davis,Monitor (24in),1,199.99,Debit Card
+10010,2024-06-02,Sophia Hernandez,Desk Lamp,1,24.95,Gift Card
+10011,2024-06-02,Benjamin Thomas,Stapler,1,5.99,Credit Card
+10012,2024-06-02,Isabella Garcia,Sticky Notes (100 pack),2,4.99,Cash on Delivery
+10013,2024-06-02,Lucas Johnson,Highlighter Pens (12 pack),3,7.99,Gift Card
+10014,2024-06-02,Ava Rodriguez,Pencils (Pre-Sharpened, 24 pack),2,3.99,Credit Card
+10015,2024-06-02,Matthew Williams,Water Bottle,1,14.99,Debit Card
+10016,2024-06-02,Evelyn Lopez,Travel Mug,1,19.99,Gift Card
+10017,2024-06-02,Daniel Young,Lunch Bag,1,9.99,Credit Card
+10018,2024-06-02,Charlotte Allen, Backpack,1,49.99,Debit Card
+10019,2024-06-02,Aiden Smith,Notebook (Spiral Bound),4,7.99,Cash on Delivery
+10020,2024-06-02,Lily Garcia,Binder (3-Ring),2,9.99,Gift Card
+10021,2024-06-02,Christopher Hernandez,Calculator,1,19.99,Credit Card
+10022,2024-06-02,Evelyn Taylor,Scissors,1,4.99,Debit Card
+10023,2024-06-02,Michael Rodriguez,Tape Dispenser,1,7.99,Cash on Delivery
+10024,2024-06-02,Sophia Lopez,Glue Sticks (4 pack),3,4.99,Gift Card
+10025,2024-06-02,Benjamin Young,Paper Clips (100 count),2,2.99,Credit Card
+10026,2024-06-02,Isabella Williams,Highlighters (6 pack),1,3.99,Debit Card
+10027,2024-06-02,Lucas Allen,Index Cards (100 pack),2,4.99,Cash on Delivery
+10028,2024-06-02,David Miller,Ruler (12in),1,2.99,Gift Card
+10029,2024-06-02,Sarah Garcia,Folders (25 pack),4,5.99,Credit Card
+10030,2024-06-02,William Brown,Highlighter Markers (8 pack),2,6.99,Debit Card
+10031,2024-06-02,Emily Jones,Dry Erase Markers (4 pack),1,4.99,Cash on Delivery
+10032,2024-06-02,Daniel Thomas,Stapler Refills (500 count),2,9.99,Gift Card
+10033,2024-06-02,Sophia Hernandez,Desk Organizer,1,14.99,Credit Card
+10034,2024-06-02,Olivia Lopez,Pencil Sharpener (Electric),1,12.99,Debit Card
+10035,2024-06-02,Lucas Williams,Glue (Liquid),1,3.99,Cash on Delivery
+10036,2024-06-02,Ava Rodriguez,Notepad (Sticky),1,4.99,Gift Card
+10037,2024-06-02,Matthew Allen,Highlighters (Chisel Tip),2,5.99,Credit Card
+10038,2024-06-02,Evelyn Young,Binder Dividers,1,7.99,Debit Card
+10039,2024-06-02,Daniel Garcia,Tape (Clear),1,2.99,Cash on Delivery
+10040,2024-06-02,William Lee,Headphones,1,79.99,Credit Card
+
